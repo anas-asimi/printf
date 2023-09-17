@@ -40,7 +40,8 @@ int _printf(const char *format, ...)
 
 			/* i += format_specifier_len */
 			/* characters_printed += _print_specifier(); */
-
+			i++;
+			characters_printed++;
 		}
 	}
 

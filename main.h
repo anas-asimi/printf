@@ -3,5 +3,6 @@
 
 int _printf(const char *format, ...);
 char *_specifier_extracter(const char *format, int start);
+char *_get_specifier(char *string, int start);
 
 #endif
