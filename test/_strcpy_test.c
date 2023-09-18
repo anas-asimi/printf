@@ -1,6 +1,7 @@
 #include <limits.h>
 #include <stdio.h>
 #include "../_strcpy.c"
+#include "../_strlen.c"
 
 /**
  * main - Entry point

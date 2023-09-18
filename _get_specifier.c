@@ -20,9 +20,10 @@ char *_get_specifier(const char *string, int start)
 
 	while (string[start + i])
 	{
-		c = string[start + i++];
-		if (c == '%' || c == 'c' || c == 'd' || c == 'e' || c == 'f' || c == 'g' || c == 'i' || c == 'o' || c == 's' || c == 'u' || c == 'x' || c == 'X')
+		c = string[start + i];
+		if (c == '%' || c == 'c' || c == 'd' || c == 'e' || c == 'f' || c == 'g' || c == 'i' || c == 'o' || c == 's' || c == 'u' || c == 'x' || c == 'X' || c == 'p')
 			break;
+		i++;
 	}
 	end = start + i;
 

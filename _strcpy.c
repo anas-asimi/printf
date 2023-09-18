@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-#include "_strlen.c"
 
 /**
  * *_strcpy - function that return copies of the string.
