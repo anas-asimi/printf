@@ -31,6 +31,6 @@ int _print_specifier(char *specifier, va_list *list)
 	if (type == 'd' || type == 'i' || type == 'u')
 		return (print_number(va_arg(*list, int)));
 	if (type == 'b')
-		return (print_binary(va_arg(*list, int)));
+		return (print_binary(va_arg(*list, unsigned int)));
 	return (1);
 }
