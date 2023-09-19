@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdarg.h>
-#include <stdio.h>
 
 /**
  * print_specifier - print a specifier.
