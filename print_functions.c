@@ -2,13 +2,12 @@
 
 /**
  * print_character - function that return copies of the string.
- * @x: x.
+ * @c: c.
  * Return: print.
  */
 
-int print_character(char c, int flags)
+int print_character(char c)
 {
-	flags++;
 	_putchar(c);
 	return (1);
 }

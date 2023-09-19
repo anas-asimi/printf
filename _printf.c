@@ -1,11 +1,6 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include "main.h"
-/*
-#include "_get_specifier.c"
-#include "_strlen.c"
-#include "_print_specifier.c"
-*/
 
 /**
  * _printf - Printf function
@@ -19,7 +14,11 @@ int _printf(const char *format, ...)
 	int characters_printed = 0;
 	char *format_specifier;
 	int format_specifier_len;
+	int arg_index = 0;
+	va_list list;
 
+	/* initialise the args */
+	va_start(list, format);
 	/* loop over the string */
 	while (format[progress])
 	{
@@ -39,7 +38,8 @@ int _printf(const char *format, ...)
 			/* increase progresse to skip the whole format specifier */
 			progress += format_specifier_len + 1;
 			/* increase the printed characters counter */
-			characters_printed += _print_specifier(format_specifier, 1);
+			characters_printed += _print_specifier(format_specifier, list, arg_index);
+			arg_index++;
 			continue;
 		}
 		/* if the character is normal */
