@@ -68,3 +68,22 @@ int print_binary(int n)
 	printed_characters++;
 	return (printed_characters);
 }
+
+/**
+ * print_octal - function.
+ * @n: n.
+ * Return: 1.
+ */
+int print_octal(int n)
+{
+	int printed_characters = 0;
+	int x;
+
+	x = n % 8;
+	n = (n - x) / 8;
+	if (n > 0)
+		printed_characters += print_octal(n);
+	_putchar(x + '0');
+	printed_characters++;
+	return (printed_characters);
+}

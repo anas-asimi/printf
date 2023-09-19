@@ -6,6 +6,40 @@
 
 int main(void)
 {
-	print_binary(4);
+	int i;
+
+	i = 0;
+	print_binary(i++);
+	_putchar('\n');
+	print_binary(i++);
+	_putchar('\n');
+	print_binary(i++);
+	_putchar('\n');
+	print_binary(i++);
+	_putchar('\n');
+	print_binary(i++);
+	_putchar('\n');
+	print_binary(i++);
+	_putchar('\n');
+	print_binary(i++);
+	_putchar('\n');
+	print_binary(i++);
+	_putchar('\n');
+	print_binary(i++);
+	_putchar('\n');
+	print_binary(i++);
+	_putchar('\n');
+	print_binary(i++);
+	_putchar('\n');
+	print_binary(i++);
+	_putchar('\n');
+	print_binary(i++);
+	_putchar('\n');
+	print_binary(i++);
+	_putchar('\n');
+	print_binary(i++);
+	_putchar('\n');
+	print_binary(i++);
+
 	return (0);
 }

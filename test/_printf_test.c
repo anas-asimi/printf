@@ -41,8 +41,9 @@ int main(void)
 	len2 = printf("Numbers: [%d]\n", 999);
 	printf("printed characters are : [%d] - [%d]\n\n", len, len2);
 
-	len = _printf("[%b]\n", 98);
-	printf("printed characters are : [%d]\n\n", len);
+	len = _printf("Octals: [%o]\n", 999);
+	len2 = printf("Octals: [%o]\n", 999);
+	printf("printed characters are : [%d] - [%d]\n\n", len, len2);
 
 	return (0);
 	/*
