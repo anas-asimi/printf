@@ -15,5 +15,7 @@ int print_string(char *s);
 int print_number(int n);
 int print_binary(int n);
 int print_octal(int n);
+int print_base16_lower(int n);
+int print_base16_upper(int n);
 
 #endif

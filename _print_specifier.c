@@ -34,5 +34,9 @@ int _print_specifier(char *specifier, va_list *list)
 		return (print_binary(va_arg(*list, int)));
 	if (type == 'o')
 		return (print_octal(va_arg(*list, int)));
+	if (type == 'x')
+		return (print_base16_lower(va_arg(*list, int)));
+	if (type == 'X')
+		return (print_base16_upper(va_arg(*list, int)));
 	return (1);
 }
