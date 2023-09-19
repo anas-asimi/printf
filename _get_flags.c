@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * get_flags - Calculates active flags
+ * _get_flags - Calculates active flags
  * @specifier: specifier
  * Return: Flags:
  */

@@ -13,7 +13,7 @@ int print_character(char c)
 
 /**
  * print_string - function.
- * @c: c.
+ * @s: s.
  * Return: 1.
  */
 int print_string(char *s)

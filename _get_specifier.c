@@ -2,11 +2,11 @@
 #include "main.h"
 
 /**
- * get_specifier - returns length os string.
+ * _get_specifier - returns length os string.
  * @string: string to evaluate
  * @start: start index of specifier
  * Return: pointer to specifier without the first %
- * or NULL if the start index not % 
+ * or NULL if the start index not %
  * or if cant alloc memory.
  */
 char *_get_specifier(const char *string, int start)
@@ -21,9 +21,11 @@ char *_get_specifier(const char *string, int start)
 	while (string[start + i])
 	{
 		c = string[start + i];
-		if (c == '%' || c == 'c' || c == 'd' || c == 'e' || c == 'f' || c == 'g')
+		if (c == '%' || c == 'c' || c == 'd' || c == 'e' || c == 'f')
 			break;
-		if (c == 'i' || c == 'o' || c == 's' || c == 'u' || c == 'x' || c == 'X' || c == 'p')
+		if (c == 'g' || c == 'i' || c == 'o' || c == 's')
+			break;
+		if (c == 'u' || c == 'x' || c == 'X' || c == 'p')
 			break;
 		i++;
 	}
