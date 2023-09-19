@@ -10,7 +10,6 @@
 int _printf(const char *format, ...)
 {
 	int progress = 0;
-	char c;
 	int characters_printed = 0;
 	char *format_specifier;
 	int format_specifier_len;
@@ -20,13 +19,11 @@ int _printf(const char *format, ...)
 	va_start(list, format);
 	if (format == NULL)
 		return (-1);
-
 	/* loop over the string */
 	while (format[progress])
 	{
-		c = format[progress];
 		/* if the character is a format spicifier */
-		if (c == '%')
+		if (format[progress] == '%')
 		{
 			if (format[progress + 1] == '%')
 			{
