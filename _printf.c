@@ -18,6 +18,9 @@ int _printf(const char *format, ...)
 
 	/* initialise the args */
 	va_start(list, format);
+	if (format == NULL)
+		return (-1);
+
 	/* loop over the string */
 	while (format[progress])
 	{
@@ -46,5 +49,5 @@ int _printf(const char *format, ...)
 		characters_printed++;
 	}
 	va_end(list);
-	return (1);
+	return (characters_printed);
 }
