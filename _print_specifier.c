@@ -11,11 +11,16 @@ int _print_specifier(char *specifier, va_list list, int arg_index)
 {
 	int len;
 	char type;
+	/*
 	int flags;
+	*/
 
 	len = _strlen(specifier);
 	type = specifier[len - 1];
+	/*
 	flags = _get_flags(specifier);
+	*/
+	arg_index++;
 	/*
 	printf("\n===================>	specifier is	: '%s'\n", specifier);
 	printf("===================>	len is		: %d\n", len);
