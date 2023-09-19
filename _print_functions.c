@@ -25,3 +25,27 @@ int print_string(char *s)
 
 	return (i);
 }
+
+/**
+ * print_number - function.
+ * @n: n.
+ * Return: 1.
+ */
+int print_number(int n)
+{
+	unsigned int x;
+	int printed_characters = 0;
+
+	x = n;
+	if (n < 0)
+	{
+		_putchar('-');
+		printed_characters++;
+		x = -n;
+	}
+	if (x >= 10)
+		printed_characters += print_number(x / 10);
+	_putchar(x % 10 + '0');
+	printed_characters++;
+	return (printed_characters);
+}
