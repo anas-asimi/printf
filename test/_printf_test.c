@@ -19,31 +19,31 @@ int main(void)
 
 	len = _printf("Let's try to printf a simple sentence.\n");
 	len2 = printf("Let's try to printf a simple sentence.\n");
-	printf("printed characters are : [%d] - [%d]\n", len, len2);
+	printf("printed characters are : [%d] - [%d]\n\n", len, len2);
 
 	len = _printf("Character:[%c]\n", 'H');
 	len2 = printf("Character:[%c]\n", 'H');
-	printf("printed characters are : [%d] - [%d]\n", len, len2);
+	printf("printed characters are : [%d] - [%d]\n\n", len, len2);
 
 	len = _printf("Percent :[%%]\n");
 	len2 = printf("Percent :[%%]\n");
-	printf("printed characters are : [%d] - [%d]\n", len, len2);
+	printf("printed characters are : [%d] - [%d]\n\n", len, len2);
 
 	len = _printf("String:[%s]\n", "I am a string !");
 	len2 = printf("String:[%s]\n", "I am a string !");
-	printf("printed characters are : [%d] - [%d]\n", len, len2);
+	printf("printed characters are : [%d] - [%d]\n\n", len, len2);
 
 	len = _printf("Multiple string: [%s] [%s]\n", "I am a string 1!", "I am a string 2!");
 	len2 = printf("Multiple string: [%s] [%s]\n", "I am a string 1!", "I am a string 2!");
-	printf("printed characters are : [%d] - [%d]\n", len, len2);
+	printf("printed characters are : [%d] - [%d]\n\n", len, len2);
 
 	len = _printf("Multiple types: [%s] [%c]\n", "I am a string 1!", 'Z');
 	len2 = printf("Multiple types: [%s] [%c]\n", "I am a string 1!", 'Z');
-	printf("printed characters are : [%d] - [%d]\n", len, len2);
+	printf("printed characters are : [%d] - [%d]\n\n", len, len2);
 
 	len = _printf("Numbers: [%d]\n", 999);
 	len2 = printf("Numbers: [%d]\n", 999);
-	printf("printed characters are : [%d] - [%d]\n", len, len2);
+	printf("printed characters are : [%d] - [%d]\n\n", len, len2);
 
 	return (0);
 	_printf("Length:[%d, %i]\n", len, len);
