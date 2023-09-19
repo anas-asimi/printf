@@ -13,5 +13,6 @@ int _get_flags(char *specifier);
 int print_character(char c);
 int print_string(char *s);
 int print_number(int n);
+int print_binary(int n);
 
 #endif

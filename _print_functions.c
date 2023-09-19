@@ -49,3 +49,22 @@ int print_number(int n)
 	printed_characters++;
 	return (printed_characters);
 }
+
+/**
+ * print_binary - function.
+ * @n: n.
+ * Return: 1.
+ */
+int print_binary(int n)
+{
+	int printed_characters = 0;
+	int x;
+
+	x = n % 2;
+	n = (n - x) / 2;
+	if (n > 0)
+		printed_characters += print_binary(n);
+	_putchar(x + '0');
+	printed_characters++;
+	return (printed_characters);
+}

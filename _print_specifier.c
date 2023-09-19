@@ -30,5 +30,7 @@ int _print_specifier(char *specifier, va_list *list)
 		return (print_string(va_arg(*list, char *)));
 	if (type == 'd' || type == 'i')
 		return (print_number(va_arg(*list, int)));
+	if (type == 'b')
+		return (print_binary(va_arg(*list, int)));
 	return (1);
 }

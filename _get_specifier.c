@@ -23,7 +23,7 @@ char *_get_specifier(const char *string, int start)
 		c = string[start + i];
 		if (c == '%' || c == 'c' || c == 'd' || c == 'e' || c == 'f')
 			break;
-		if (c == 'g' || c == 'i' || c == 'o' || c == 's')
+		if (c == 'g' || c == 'i' || c == 'o' || c == 's' || c == 'b')
 			break;
 		if (c == 'u' || c == 'x' || c == 'X' || c == 'p')
 			break;
