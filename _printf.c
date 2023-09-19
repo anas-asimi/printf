@@ -14,7 +14,6 @@ int _printf(const char *format, ...)
 	int characters_printed = 0;
 	char *format_specifier;
 	int format_specifier_len;
-	int arg_index = 0;
 	va_list list;
 
 	/* initialise the args */
@@ -38,8 +37,7 @@ int _printf(const char *format, ...)
 			/* increase progresse to skip the whole format specifier */
 			progress += format_specifier_len + 1;
 			/* increase the printed characters counter */
-			characters_printed += _print_specifier(format_specifier, list, arg_index);
-			arg_index++;
+			characters_printed += _print_specifier(format_specifier, &list);
 			continue;
 		}
 		/* if the character is normal */
@@ -47,6 +45,6 @@ int _printf(const char *format, ...)
 		progress++;
 		characters_printed++;
 	}
-
+	va_end(list);
 	return (1);
 }

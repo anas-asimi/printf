@@ -19,10 +19,18 @@ int main(void)
 
 	len = _printf("Let's try to printf a simple sentence.\n");
 	len2 = printf("Let's try to printf a simple sentence.\n");
+	
 	_printf("Character:[%c]\n", 'H');
 	printf("Character:[%c]\n", 'H');
+
+	_printf("Percent :[%%]\n");
+	printf("Percent :[%%]\n");
+
 	_printf("String:[%s]\n", "I am a string !");
 	printf("String:[%s]\n", "I am a string !");
+
+	_printf("String: [%s] [%s]\n", "I am a string 1!","I am a string 2!");
+	printf("String: [%s] [%s]\n", "I am a string 1!","I am a string 2!");
 	return (0);
 	_printf("Length:[%d, %i]\n", len, len);
 	printf("Length:[%d, %i]\n", len2, len2);
