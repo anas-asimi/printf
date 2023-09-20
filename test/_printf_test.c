@@ -75,6 +75,9 @@ int main(void)
 	len2 = printf("Base 16 upper: [%X]\n", 999);
 	printf("printed characters are : [%d] - [%d]\n\n", len, len2);
 
+	len = _printf("%S\n", "No special character.");
+	printf("printed characters are : [%d]\n\n", len);
+
 	return (0);
 	/*
 	_printf("Length:[%d, %i]\n", len, len);

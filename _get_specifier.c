@@ -22,7 +22,7 @@ char *_get_specifier(const char *string, int start)
 			i++;
 			continue;
 		}
-		if (c == 'c' || c == 'd' || c == 'e' || c == 'f' || c == 's')
+		if (c == 'c' || c == 'd' || c == 'e' || c == 'f' || c == 's' || c == 'S')
 			break;
 		if (c == 'g' || c == 'i' || c == 'o' || c == 'b' || c == '%')
 			break;
