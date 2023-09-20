@@ -33,6 +33,6 @@ int print_rot13string(char *s)
 		else
 			_putchar(c);
 	}
-
+	free(s);
 	return (i);
 }
