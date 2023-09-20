@@ -24,9 +24,9 @@ int _print_specifier(char *specifier, va_list *list)
 	if (type == '%')
 		return (print_character('%'));
 	if (type == 'K')
-		return (print_string("%K\n"));
+		return (print_string("%K"));
 	if (type == '!')
-		return (print_string("%!\n"));
+		return (print_string("%!"));
 	if (type == 's')
 		return (print_string(va_arg(*list, char *)));
 	if (type == 'd' || type == 'i')
