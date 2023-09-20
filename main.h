@@ -21,8 +21,8 @@ int print_number(int n);
 int print_unsigned_int(unsigned int n);
 int print_binary(int64_t n);
 int print_octal(int64_t n);
-int print_base16_lower(unsigned long int n);
-int print_base16_upper(unsigned long int n);
+int print_base16_lower(int64_t n);
+int print_base16_upper(int64_t n);
 int print_pointer(void *n);
 
 #endif
