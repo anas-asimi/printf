@@ -78,10 +78,10 @@ int print_unsigned_int(unsigned int n)
  * @n: n.
  * Return: 1.
  */
-int print_binary(unsigned long int n)
+int print_binary(int64_t n)
 {
 	int printed_characters = 0;
-	int x;
+	int64_t x;
 
 	x = n % 2;
 	n = (n - x) / 2;

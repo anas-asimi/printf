@@ -32,7 +32,7 @@ int _print_specifier(char *specifier, va_list *list)
 		return (print_unsigned_int(va_arg(*list, unsigned int)));
 
 	if (type == 'b')
-		return (print_binary(va_arg(*list, unsigned long int)));
+		return (print_binary(va_arg(*list, int64_t)));
 	if (type == 'o')
 		return (print_octal(va_arg(*list, unsigned long int)));
 	if (type == 'x')
