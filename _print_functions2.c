@@ -5,10 +5,10 @@
  * @n: n.
  * Return: 1.
  */
-int print_octal(int n)
+int print_octal(unsigned long int n)
 {
 	int printed_characters = 0;
-	int x;
+	unsigned long int x;
 
 	x = n % 8;
 	n = (n - x) / 8;
