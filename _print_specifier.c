@@ -39,5 +39,7 @@ int _print_specifier(char *specifier, va_list *list)
 		return (print_base16_lower(va_arg(*list, unsigned long int)));
 	if (type == 'X')
 		return (print_base16_upper(va_arg(*list, unsigned long int)));
+	if (type == 'p')
+		return (print_pointer(va_arg(*list, void *)));
 	return (1);
 }

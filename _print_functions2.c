@@ -62,3 +62,23 @@ int print_base16_upper(unsigned long int n)
 	printed_characters++;
 	return (printed_characters);
 }
+
+/**
+ * print_pointer - function.
+ * @n: n.
+ * Return: 1.
+ */
+int print_pointer(void *n)
+{
+	int printed_characters;
+
+	if (n == NULL)
+	{
+		print_string("(nil)");
+		return (5);
+	}
+	printed_characters = 2;
+	print_string("0x");
+	printed_characters += print_base16_lower((long long)n);
+	return (printed_characters);
+}

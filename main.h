@@ -22,5 +22,6 @@ int print_binary(unsigned long int n);
 int print_octal(unsigned long int n);
 int print_base16_lower(unsigned long int n);
 int print_base16_upper(unsigned long int n);
+int print_pointer(void *n);
 
 #endif
