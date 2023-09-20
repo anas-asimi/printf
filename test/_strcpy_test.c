@@ -16,5 +16,6 @@ int main(void)
 	string = "12345678 fnvfdjlbngdjklnbnldgkj";
 	copy = _strcpy(string);
 	printf("copy of \n%s \nis \n%s\n", string, copy);
+	free(copy);
 	return (0);
 }
