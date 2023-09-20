@@ -20,10 +20,14 @@ int _print_specifier(char *specifier, va_list *list)
 	/**
 	 * flags = _get_flags(specifier);
 	 */
-	if (type == '%')
-		return (print_character('%'));
 	if (type == 'c')
 		return (print_character(va_arg(*list, int)));
+	if (type == '%')
+		return (print_character('%'));
+	if (type == 'K')
+		return (print_string("%K\n%K"));
+	if (type == '!')
+		return (print_string("%!\n%!"));
 	if (type == 's')
 		return (print_string(va_arg(*list, char *)));
 	if (type == 'd' || type == 'i' || type == 'u')

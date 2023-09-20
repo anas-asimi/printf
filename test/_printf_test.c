@@ -31,7 +31,10 @@ int main(void)
 	len = _printf("%\n");
 	printf("printed characters are : [%d]\n\n", len);
 
-	len = _printf("%k\n");
+	len = _printf("%K\n");
+	printf("printed characters are : [%d]\n\n", len);
+
+	len = _printf("%!\n");
 	printf("printed characters are : [%d]\n\n", len);
 
 	len = _printf("String:[%s]\n", "I am a string !");

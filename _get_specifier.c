@@ -27,7 +27,7 @@ char *_get_specifier(const char *string, int start)
 			break;
 		if (c == 'g' || c == 'i' || c == 'o' || c == 'b' || c == '%')
 			break;
-		if (c == 'u' || c == 'x' || c == 'X' || c == 'p')
+		if (c == 'u' || c == 'x' || c == 'X' || c == 'p' || c == '!' || c == 'K')
 			break;
 		return ("");
 	}
