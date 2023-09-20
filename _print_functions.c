@@ -58,13 +58,11 @@ int print_number(int n)
  * @n: n.
  * Return: 1.
  */
-int print_binary(int n)
+int print_binary(unsigned long int n)
 {
 	int printed_characters = 0;
 	int x;
 
-	if (n < 0)
-		return (print_binary(INT_MIN + n));
 	x = n % 2;
 	n = (n - x) / 2;
 	if (n > 0)
