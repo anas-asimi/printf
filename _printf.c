@@ -25,16 +25,10 @@ int _printf(const char *format, ...)
 		/* if the character is a format spicifier */
 		if (format[progress] == '%')
 		{
-			if (format[progress + 1] == '%')
-			{
-				_putchar('%');
-				progress += 2;
-				characters_printed++;
-				continue;
-			}
 			format_specifier = _get_specifier(format, progress);
 			format_specifier_len = _strlen(format_specifier);
-			if (format_specifier_len == 1)
+			/*if specifier empty '' in case one percent '%'*/
+			if (format_specifier_len == 0)
 			{
 				progress++;
 				continue;

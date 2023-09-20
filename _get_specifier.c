@@ -18,18 +18,18 @@ char *_get_specifier(const char *string, int start)
 	while (string[start + i])
 	{
 		c = string[start + i];
-		if (c == 'c' || c == 'd' || c == 'e' || c == 'f' || c == 's')
-			break;
-		if (c == 'g' || c == 'i' || c == 'o' || c == 'b')
-			break;
-		if (c == 'u' || c == 'x' || c == 'X' || c == 'p')
-			break;
 		if (c == '-' || c == '+' || c == '0' || c == '#' || c == ' ' || c == 'l')
 		{
 			i++;
 			continue;
 		}
-		break;
+		if (c == 'c' || c == 'd' || c == 'e' || c == 'f' || c == 's')
+			break;
+		if (c == 'g' || c == 'i' || c == 'o' || c == 'b' || c == '%')
+			break;
+		if (c == 'u' || c == 'x' || c == 'X' || c == 'p')
+			break;
+		return ("");
 	}
 	end = start + i;
 

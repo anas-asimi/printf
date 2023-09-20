@@ -18,12 +18,10 @@ int _print_specifier(char *specifier, va_list *list)
 	len = _strlen(specifier);
 	type = specifier[len - 1];
 	/**
-	 * printf("\n===================>	specifier is	: '%s'\n", specifier);
-	 * printf("===================>	type is		: %c\n", type);
-	*/
-	/**
 	 * flags = _get_flags(specifier);
 	 */
+	if (type == '%')
+		return (print_character('%'));
 	if (type == 'c')
 		return (print_character(va_arg(*list, int)));
 	if (type == 's')

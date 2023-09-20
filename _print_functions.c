@@ -105,7 +105,7 @@ int print_base16_lower(int n)
 	x = n % 16;
 	n = (n - x) / 16;
 	if (n > 0)
-		printed_characters += print_base16_upper(n);
+		printed_characters += print_base16_lower(n);
 	if (x < 10)
 		_putchar(x + '0');
 	else

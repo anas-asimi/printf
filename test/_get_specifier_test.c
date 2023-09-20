@@ -21,7 +21,7 @@ int main(void)
 		printf("specifier 1 is null\n");
 	if (specifier2 == NULL)
 		printf("specifier 2 is null\n");
-	printf("specifiers of '%s']' is :\n'%s' and '%s'\n", string, specifier1, specifier2);
+	printf("specifiers of [%s] is : [%s] and [%s]\n", string, specifier1, specifier2);
 
 	return (0);
 }
