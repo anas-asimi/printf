@@ -52,6 +52,7 @@ int print_non_printable(char *s)
 			_putchar('x');
 			printed_characters += 2;
 			printed_characters += print_base16_upper(s[i]);
+			i++;
 		}
 		else
 		{

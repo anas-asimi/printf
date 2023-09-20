@@ -77,6 +77,8 @@ int main(void)
 
 	len = _printf("%S\n", "No special character.");
 	printf("printed characters are : [%d]\n\n", len);
+	len = _printf("%S\n", "\n");
+	printf("printed characters are : [%d]\n\n", len);
 
 	return (0);
 	/*
