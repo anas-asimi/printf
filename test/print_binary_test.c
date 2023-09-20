@@ -40,6 +40,12 @@ int main(void)
 	print_binary(i++);
 	_putchar('\n');
 	print_binary(i++);
+	_putchar('\n');
+	print_binary(1024);
+	_putchar('\n');
+	print_binary(-1024);
 
 	return (0);
 }
+/* 0								11111111111111111111110000000000 */
+/* 11111111111111111111110000000000	11111111111111111111110000000000 */
