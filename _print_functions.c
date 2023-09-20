@@ -64,7 +64,7 @@ int print_binary(int n)
 	int x;
 
 	if (n < 0)
-		return (print_binary(UINT_MAX - n));
+		return (print_binary(INT_MIN + n));
 	x = n % 2;
 	n = (n - x) / 2;
 	if (n > 0)
