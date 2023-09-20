@@ -36,7 +36,7 @@ int print_string(char *s)
  */
 int print_number(int n)
 {
-	unsigned int x;
+	int x;
 	int printed_characters = 0;
 
 	x = n;
@@ -58,9 +58,9 @@ int print_number(int n)
  * @n: n.
  * Return: 1.
  */
-int print_unsigned(unsigned n)
+int print_unsigned(unsigned long int n)
 {
-	unsigned int x;
+	unsigned long int x;
 	int printed_characters = 0;
 
 	x = n;
