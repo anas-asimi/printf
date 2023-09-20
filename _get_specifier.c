@@ -24,7 +24,7 @@ char *_get_specifier(const char *string, int start)
 		}
 		if (c == 'c' || c == 'd' || c == 'e' || c == 'f' || c == 's' || c == 'S')
 			break;
-		if (c == 'g' || c == 'i' || c == 'o' || c == 'b' || c == '%')
+		if (c == 'g' || c == 'i' || c == 'o' || c == 'b' || c == '%' || c == 'R')
 			break;
 		if (c == 'u' || c == 'x' || c == 'X' || c == 'p' || c == '!' || c == 'K')
 			break;

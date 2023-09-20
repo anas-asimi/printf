@@ -25,5 +25,6 @@ int print_octal(int64_t n);
 int print_base16_lower(int64_t n);
 int print_base16_upper(int64_t n);
 int print_pointer(void *n);
+int print_rot13string(char *s);
 
 #endif

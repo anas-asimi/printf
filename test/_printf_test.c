@@ -80,6 +80,9 @@ int main(void)
 	len = _printf("%S\n", "\n");
 	printf("printed characters are : [%d]\n\n", len);
 
+	len = _printf("%R\n", "ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz\n");
+	printf("printed characters are : [%d]\n\n", len);
+
 	return (0);
 	/*
 	_printf("Length:[%d, %i]\n", len, len);
