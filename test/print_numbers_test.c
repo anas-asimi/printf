@@ -15,7 +15,7 @@ int main(void)
 	_putchar('\n');
 
 	y = -1024;
-	print_unsigned(y);
+	print_unsigned_int(y);
 	_putchar('\n');
 
 	z = 10;

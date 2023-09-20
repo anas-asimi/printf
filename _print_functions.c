@@ -36,7 +36,7 @@ int print_string(char *s)
  */
 int print_number(int n)
 {
-	unsigned int x;
+	int x;
 	int printed_characters = 0;
 
 	x = n;
@@ -54,18 +54,20 @@ int print_number(int n)
 }
 
 /**
- * print_unsigned - function.
+ * print_unsigned_int - function.
  * @n: n.
  * Return: 1.
  */
-int print_unsigned(unsigned n)
+int print_unsigned_int(unsigned int n)
 {
 	unsigned int x;
 	int printed_characters = 0;
 
 	x = n;
 	if (x >= 10)
-		printed_characters += print_unsigned(x / 10);
+	{
+		printed_characters += print_unsigned_int(x / 10);
+	}
 	_putchar(x % 10 + '0');
 	printed_characters++;
 	return (printed_characters);
