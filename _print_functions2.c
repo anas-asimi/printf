@@ -77,8 +77,7 @@ int print_pointer(void *n)
 		print_string("(nil)");
 		return (5);
 	}
-	printed_characters = 2;
-	print_string("0x");
-	printed_characters += print_base16_lower((long long)n);
+	printed_characters = print_string("0x");
+	printed_characters += print_base16_lower((uintptr_t)n);
 	return (printed_characters);
 }

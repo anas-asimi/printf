@@ -4,9 +4,10 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdint.h>
 #include <stddef.h>
 
-int _putchar(char c);
+	int _putchar(char c);
 int _printf(const char *format, ...);
 char *_get_specifier(const char *string, int start);
 int _get_specifiers_number(const char *string);
