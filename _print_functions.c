@@ -50,7 +50,7 @@ int print_non_printable(char *s)
 		{
 			_putchar('\\');
 			_putchar('x');
-			if (s[i]<16)
+			if (s[i] < 16)
 			{
 				_putchar('0');
 				printed_characters++;
