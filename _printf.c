@@ -1,4 +1,5 @@
 #include <stdarg.h>
+#include <stdlib.h>
 #include <stdio.h>
 #include "main.h"
 
@@ -37,6 +38,7 @@ int _printf(const char *format, ...)
 			progress += format_specifier_len + 1;
 			/* increase the printed characters counter */
 			characters_printed += _print_specifier(format_specifier, &list);
+			free(format_specifier);
 			continue;
 		}
 		/* if the character is normal */
