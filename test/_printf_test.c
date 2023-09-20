@@ -29,6 +29,9 @@ int main(void)
 	len2 = printf("String:[%s]\n", "I am a string !");
 	printf("printed characters are : [%d] - [%d]\n\n", len, len2);
 
+	len = _printf("String:[%s]\n", (char *)0);
+	printf("printed characters are : [%d]\n\n", len);
+
 	len = _printf("Multiple string: [%s] [%s]\n", "I am a string 1!", "I am a string 2!");
 	len2 = printf("Multiple string: [%s] [%s]\n", "I am a string 1!", "I am a string 2!");
 	printf("printed characters are : [%d] - [%d]\n\n", len, len2);

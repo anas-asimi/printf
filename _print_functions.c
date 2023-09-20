@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 
 /**
  * print_character - function.
@@ -19,6 +20,9 @@ int print_character(char c)
 int print_string(char *s)
 {
 	int i = 0;
+
+	if (s == NULL)
+		return (print_string("(null)"));
 
 	while (s[i])
 		_putchar(s[i++]);
