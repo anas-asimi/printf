@@ -41,9 +41,9 @@ int main(void)
 	_putchar('\n');
 	print_binary(i++);
 	_putchar('\n');
-	print_binary(UINT_MAX * 2);
+	print_binary(INT_MAX * 2);
 	_putchar('\n');
-	print_string("11111111111111111111111111111110");
+	printf("11111111111111111111111111111110");
 
 	return (0);
 }

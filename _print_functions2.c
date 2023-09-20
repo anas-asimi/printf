@@ -24,10 +24,10 @@ int print_octal(int n)
  * @n: n.
  * Return: 1.
  */
-int print_base16_lower(int n)
+int print_base16_lower(unsigned long int n)
 {
 	int printed_characters = 0;
-	int x;
+	unsigned long int x;
 
 	x = n % 16;
 	n = (n - x) / 16;
@@ -46,10 +46,10 @@ int print_base16_lower(int n)
  * @n: n.
  * Return: 1.
  */
-int print_base16_upper(int n)
+int print_base16_upper(unsigned long int n)
 {
 	int printed_characters = 0;
-	int x;
+	unsigned long int x;
 
 	x = n % 16;
 	n = (n - x) / 16;
