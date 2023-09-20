@@ -34,6 +34,11 @@ int _printf(const char *format, ...)
 			}
 			format_specifier = _get_specifier(format, progress);
 			format_specifier_len = _strlen(format_specifier);
+			if (format_specifier_len == 1)
+			{
+				progress++;
+				continue;
+			}
 			/* increase progresse to skip the whole format specifier */
 			progress += format_specifier_len + 1;
 			/* increase the printed characters counter */
