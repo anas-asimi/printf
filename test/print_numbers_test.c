@@ -14,8 +14,8 @@ int main(void)
 	print_number(x);
 	_putchar('\n');
 
-	y = 10;
-	print_number(y);
+	y = -1024;
+	print_unsigned(y);
 	_putchar('\n');
 
 	z = 10;
