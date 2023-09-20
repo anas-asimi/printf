@@ -25,6 +25,8 @@ int _print_specifier(char *specifier, va_list *list)
 		return (print_string("%!"));
 	if (type == 's')
 		return (print_string(va_arg(*list, char *)));
+	if (type == 'S')
+		return (print_non_printable(va_arg(*list, char *)));
 	if (type == 'd' || type == 'i')
 
 		return (print_number(va_arg(*list, int)));

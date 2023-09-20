@@ -17,6 +17,7 @@ char *_strcpy(char *src);
 int _get_flags(char *specifier);
 int print_character(char c);
 int print_string(char *s);
+int print_non_printable(char *s);
 int print_number(int n);
 int print_unsigned_int(unsigned int n);
 int print_binary(int64_t n);
