@@ -1,0 +1,5 @@
+{
+	"code-runner.executorMap": {
+		"c": "cd $dir && gcc -Wall -Werror -Wextra -pedantic -std=gnu89 C:\\Users\\desktopplus\\Documents\\GitHub\\printf\\_*.c $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt && del $dir$fileNameWithoutExt.exe"
+	}
+}
