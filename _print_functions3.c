@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_string - function.
+ * print_rot13string - function.
  * @s: s.
  * Return: 1.
  */
