@@ -32,13 +32,13 @@ char *_get_specifier(const char *string, int start)
 	}
 	end = start + i;
 
-	specifier = malloc(sizeof(char) * i);
+	specifier = malloc(sizeof(char) * (i + 1));
 	if (specifier == NULL)
 		return (NULL);
 
 	for (i = 0; (i + start) < end; i++)
 		specifier[i] = string[i + start + 1];
-	specifier[end - start] = '\0';
+	specifier[i] = '\0';
 
 	return (specifier);
 }
