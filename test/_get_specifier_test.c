@@ -1,6 +1,4 @@
-#include <limits.h>
-#include <stdio.h>
-#include "../_get_specifier.c"
+#include "../main.h"
 
 /**
  * main - Entry point

@@ -1,6 +1,4 @@
-#include <limits.h>
-#include <stdio.h>
-#include "../_strlen.c"
+#include "../main.h"
 
 /**
  * main - Entry point
