@@ -5,15 +5,15 @@
  * @n: n.
  * Return: 1.
  */
-int print_binary(int64_t n)
+int print_binary(uint32_t n)
 {
 	int printed_characters;
-	int64_t x;
+	uint32_t x;
 
 	printed_characters = 0;
 	x = n % 2;
 	n = (n - x) / 2;
-	if (n > 1)
+	if (n > 0)
 		printed_characters += print_binary(n);
 	_putchar(x + '0');
 	printed_characters++;

@@ -37,9 +37,9 @@ int main(void)
 	_putchar('\n');
 	print_binary(i++);
 	_putchar('\n');
-	print_binary((int64_t)INT_MAX * 2);
+	print_binary(-1024);
 	_putchar('\n');
-	printf("11111111111111111111111111111110");
+	printf("11111111111111111111110000000000");
 
 	return (0);
 }
