@@ -5,10 +5,10 @@
  * @n: n.
  * Return: 1.
  */
-int print_binary(uint32_t n)
+int print_binary(unsigned int n)
 {
 	int printed_characters;
-	uint32_t x;
+	unsigned int x;
 
 	printed_characters = 0;
 	x = n % 2;
