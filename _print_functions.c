@@ -75,9 +75,9 @@ int print_non_printable(char *s)
  * @n: n.
  * Return: 1.
  */
-int print_number(long int n)
+int print_number(int n)
 {
-	long int x;
+	unsigned int x;
 	int printed_characters;
 
 	printed_characters = 0;

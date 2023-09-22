@@ -19,7 +19,7 @@ int _get_flags(char *specifier);
 int print_character(char c);
 int print_string(char *s);
 int print_non_printable(char *s);
-int print_number(long int n);
+int print_number(int n);
 int print_unsigned_int(unsigned int n);
 int print_binary(unsigned int n);
 int print_octal(int64_t n);

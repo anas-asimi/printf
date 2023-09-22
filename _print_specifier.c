@@ -31,7 +31,7 @@ int _print_specifier(char *specifier, va_list *list)
 		return (print_rot13string(va_arg(*list, char *)));
 
 	if (type == 'd' || type == 'i')
-		return (print_number(va_arg(*list, long int)));
+		return (print_number(va_arg(*list, int)));
 	if (type == 'u')
 		return (print_unsigned_int(va_arg(*list, unsigned int)));
 
