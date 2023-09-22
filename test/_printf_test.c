@@ -53,8 +53,12 @@ int main(void)
 	len2 = printf("Multiple types: [%s] [%c]\n", "I am a string 1!", 'Z');
 	printf("printed characters are : [%d] - [%d]\n\n", len, len2);
 
-	len = _printf("Numbers: [%d]\n", 999);
-	len2 = printf("Numbers: [%d]\n", 999);
+	len = _printf("Numbers: [%d]\n", INT_MIN);
+	len2 = printf("Numbers: [%d]\n", INT_MIN);
+	printf("printed characters are : [%d] - [%d]\n\n", len, len2);
+
+	len = _printf("Numbers: [%i]\n", INT_MIN);
+	len2 = printf("Numbers: [%i]\n", INT_MIN);
 	printf("printed characters are : [%d] - [%d]\n\n", len, len2);
 
 	len = _printf("Octals: [%o]\n", 999);

@@ -75,19 +75,20 @@ int print_non_printable(char *s)
  * @n: n.
  * Return: 1.
  */
-int print_number(int n)
+int print_number(long int n)
 {
-	int x;
+	unsigned int x;
 	int printed_characters;
 
 	printed_characters = 0;
-	x = n;
 	if (n < 0)
 	{
 		_putchar('-');
 		printed_characters++;
 		x = -n;
 	}
+	else
+		x = n;
 	if (x >= 10)
 		printed_characters += print_number(x / 10);
 	_putchar(x % 10 + '0');
