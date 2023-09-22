@@ -13,7 +13,7 @@ int print_binary(int64_t n)
 	printed_characters = 0;
 	x = n % 2;
 	n = (n - x) / 2;
-	if (n > 0)
+	if (n > 1)
 		printed_characters += print_binary(n);
 	_putchar(x + '0');
 	printed_characters++;
